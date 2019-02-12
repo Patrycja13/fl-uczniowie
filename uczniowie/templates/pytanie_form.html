@@ -1,18 +1,15 @@
     <form method="POST">
     {{ form.csrf_token }}
     
-    {{ form.pytanie.label }}<br>
-    {{ form.pytanie(class="form-control") }}<br>
+    {{ form.klasa.label }}<br>
+    {{ form.klasa(class="form-control") }}<br>
     <br>
-    {{ form.kategoria.label }}<br>
-    {{ form.kategoria }}<br>
+    {{ form.rok_naboru.label }}<br>
+    {{ form.rok_naboru }}<br>
     <br>
-    <label>Podaj odpowiedzi i zaznacz poprawną:</label>
-    <ol>
-    {% for o in form.odpowiedzi %}
-        <li>{{ o }}</li>
-    {% endfor %}
-    </ol>
-    
+    <br>
+    {{ form.rok_matury.label }}<br>
+    {{ form.rok_matury }}<br>
+    <br>
     <input type="submit" value="Prześlij">
     </form>
